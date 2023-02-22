@@ -25,8 +25,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    addBookForm.addEventListener('submit', () => {
+    addBookForm.addEventListener('submit', (event) => {
         addBookItem();
+        event.preventDefault();
     });
 
     searchBar.addEventListener('keyup', () => {
