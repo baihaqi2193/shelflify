@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="shadow">
+        <div class="logo-container">
+            <h1 class="logo">Shelflify</h1>
+            <p class="slogan">Your personal bookshelf</p>
+        </div>
+    </header>
+    <main>
+        <div class="container left">
+            <div class="search-container card shadow">
+                <div class="search-icon-container">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <form action="#">
+                    <div class="form-group">
+                        <input type="text" id="search" placeholder="Find Books by Title" required>
+                    </div>
+                </form>
+            </div>
+            <div class="card shadow">
+                <div class="card-header" id="add-header">
+                    <div class="card-header-text">
+                        <h2 class="card-title">Add Books</h2>
+                        <p class="card-desc">Add books to your shelf</p>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <form action="#" id="form">
+                        <div class="form-group">
+                            <label for="title" class="form-title">Title</label>
+                            <input type="text" id="title" placeholder="Ex: Harry Potter" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="author" class="form-title">Author</label>
+                            <input type="text" id="author" placeholder="Ex: J.K Rowling" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="year" class="form-title">Year</label>
+                            <input type="number" id="year" placeholder="Ex: 1997" required>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" id="is-completed">
+                            <label for="is-completed">Completed</label>
+                        </div>
+
+                        <button type="submit" class="btn-submit" id="submit">+ ADD BOOK</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container right">
+            <div class="card shadow">
+                <div class="card-header" id="uncompleted-header">
+                    <div class="card-header-text">
+                        <h2 class="card-title">Uncompleted Books</h2>
+                        <p class="card-desc">List of your uncompleted books</p>
+                    </div>
+                    <div class="count">
+                        <p id="ucount">0</p>
+                    </div>
+                </div>
+                <div class="card-content" id="uncompleted">
+                </div>
+            </div>
+            <div class="card shadow">
+                <div class="card-header" id="completed-header">
+                    <div class="card-header-text">
+                        <h2 class="card-title">Completed Books</h2>
+                        <p class="card-desc">List of your completed books</p>
+                    </div>
+                    <div class="count">
+                        <p id="ccount">0</p>
+                    </div>
+                </div>
+                <div class="card-content" id="completed">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>💖 Made by Muhamad Nur Baihaqi w/ Love</footer>
+
+
+    <script src="assets/scripts/script.js"></script>
+</body>
+
+</html>
