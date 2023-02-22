@@ -4,7 +4,6 @@ const BOOKS_KEY = 'SHELFLIFY';
 const SAVE_EVENT = 'save_event';
 const RENDER_EVENT = 'render_event';
 
-
 const checkStorage = () => {
     if (typeof (localStorage) !== 'undefined') {
         return true;
